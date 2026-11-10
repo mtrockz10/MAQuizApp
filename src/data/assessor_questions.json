@@ -1,0 +1,1406 @@
+{
+  "title": "Municipal Assessor's Office Question Bank",
+  "total": 100,
+  "questions": [
+    {
+      "id": 1,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Which law governs real property taxation of LGUs (Book II, Title II)?",
+      "options": [
+        "RA 7160 (Local Government Code)",
+        "RA 6657",
+        "PD 1529",
+        "RA 8974"
+      ],
+      "answer": "A",
+      "answerText": "RA 7160 (Local Government Code)"
+    },
+    {
+      "id": 2,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Who appraises and assesses real property in the municipality?",
+      "options": [
+        "Treasurer",
+        "Assessor",
+        "Mayor",
+        "Registrar of Deeds"
+      ],
+      "answer": "B",
+      "answerText": "Assessor"
+    },
+    {
+      "id": 3,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Who collects the real property tax?",
+      "options": [
+        "Assessor",
+        "Municipal Treasurer",
+        "Municipal Accountant",
+        "Budget Officer"
+      ],
+      "answer": "B",
+      "answerText": "Municipal Treasurer"
+    },
+    {
+      "id": 4,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Which is NOT real property for assessment purposes?",
+      "options": [
+        "Land",
+        "Building",
+        "Machinery affixed to the property",
+        "Household furniture"
+      ],
+      "answer": "D",
+      "answerText": "Household furniture"
+    },
+    {
+      "id": 5,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "What does PIN stand for on a tax declaration?",
+      "options": [
+        "Property Index Number",
+        "Parcel Identification Note",
+        "Personal Identity Number",
+        "Property Inventory Name"
+      ],
+      "answer": "A",
+      "answerText": "Property Index Number"
+    },
+    {
+      "id": 6,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "ARP No. on a tax declaration means:",
+      "options": [
+        "Annual Rental Payment",
+        "Assessment of Real Property",
+        "Approved Registry Plan",
+        "Area Reference Point"
+      ],
+      "answer": "B",
+      "answerText": "Assessment of Real Property"
+    },
+    {
+      "id": 7,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Assessed value is computed as:",
+      "options": [
+        "Market value × assessment level",
+        "Market value ÷ assessment level",
+        "Area × tax rate",
+        "Market value + improvements"
+      ],
+      "answer": "A",
+      "answerText": "Market value × assessment level"
+    },
+    {
+      "id": 8,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Real property is classified, valued and assessed on the basis of its:",
+      "options": [
+        "Title classification",
+        "Actual use",
+        "Owner's declaration only",
+        "Zoning only"
+      ],
+      "answer": "B",
+      "answerText": "Actual use"
+    },
+    {
+      "id": 9,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "How often must a general revision of assessments be done?",
+      "options": [
+        "Every year",
+        "Every 2 years",
+        "Every 3 years",
+        "Every 10 years"
+      ],
+      "answer": "C",
+      "answerText": "Every 3 years"
+    },
+    {
+      "id": 10,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "The Schedule of Market Values (SMV) is enacted by the:",
+      "options": [
+        "Sangguniang Panlalawigan/Sanggunian concerned",
+        "DENR",
+        "Registry of Deeds",
+        "BIR"
+      ],
+      "answer": "A",
+      "answerText": "Sangguniang Panlalawigan/Sanggunian concerned"
+    },
+    {
+      "id": 11,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "The obligation to pay RPT accrues on:",
+      "options": [
+        "January 1 of each year",
+        "March 31",
+        "July 1",
+        "December 31"
+      ],
+      "answer": "A",
+      "answerText": "January 1 of each year"
+    },
+    {
+      "id": 12,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Fair market value is the price at which a property may be sold by a seller who is:",
+      "options": [
+        "Not compelled to sell, to a buyer not compelled to buy",
+        "In foreclosure",
+        "A government agency",
+        "Related to the buyer"
+      ],
+      "answer": "A",
+      "answerText": "Not compelled to sell, to a buyer not compelled to buy"
+    },
+    {
+      "id": 13,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Maximum basic RPT rate in a province, as a percent of assessed value:",
+      "options": [
+        "0.5%",
+        "1%",
+        "2%",
+        "5%"
+      ],
+      "answer": "B",
+      "answerText": "1%"
+    },
+    {
+      "id": 14,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "The Special Education Fund (SEF) levy is an additional:",
+      "options": [
+        "0.5%",
+        "1%",
+        "2%",
+        "3%"
+      ],
+      "answer": "B",
+      "answerText": "1%"
+    },
+    {
+      "id": 15,
+      "category": "Basics and Law",
+      "type": "multiple_choice",
+      "question": "Maximum basic RPT rate in cities and municipalities within Metro Manila:",
+      "options": [
+        "1%",
+        "1.5%",
+        "2%",
+        "3%"
+      ],
+      "answer": "C",
+      "answerText": "2%"
+    },
+    {
+      "id": 16,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for residential land:",
+      "options": [
+        "10%",
+        "20%",
+        "40%",
+        "50%"
+      ],
+      "answer": "B",
+      "answerText": "20%"
+    },
+    {
+      "id": 17,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for agricultural land:",
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "50%"
+      ],
+      "answer": "C",
+      "answerText": "40%"
+    },
+    {
+      "id": 18,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for commercial land:",
+      "options": [
+        "20%",
+        "40%",
+        "50%",
+        "80%"
+      ],
+      "answer": "C",
+      "answerText": "50%"
+    },
+    {
+      "id": 19,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for industrial land:",
+      "options": [
+        "20%",
+        "40%",
+        "30%",
+        "50%"
+      ],
+      "answer": "D",
+      "answerText": "50%"
+    },
+    {
+      "id": 20,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for mineral land:",
+      "options": [
+        "50%",
+        "20%",
+        "10%",
+        "40%"
+      ],
+      "answer": "A",
+      "answerText": "50%"
+    },
+    {
+      "id": 21,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for timberland:",
+      "options": [
+        "10%",
+        "20%",
+        "40%",
+        "50%"
+      ],
+      "answer": "B",
+      "answerText": "20%"
+    },
+    {
+      "id": 22,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "Assessment level for special classes (cultural, scientific, hospital):",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "answer": "A",
+      "answerText": "10%"
+    },
+    {
+      "id": 23,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "A lot planted to palay is classified as:",
+      "options": [
+        "Residential",
+        "Commercial",
+        "Agricultural",
+        "Industrial"
+      ],
+      "answer": "C",
+      "answerText": "Agricultural"
+    },
+    {
+      "id": 24,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "A lot actually used as a sari-sari store and hardware is classified as:",
+      "options": [
+        "Residential",
+        "Commercial",
+        "Agricultural",
+        "Special"
+      ],
+      "answer": "B",
+      "answerText": "Commercial"
+    },
+    {
+      "id": 25,
+      "category": "Classification and Assessment Levels",
+      "type": "multiple_choice",
+      "question": "A lot actually used as a factory is classified as:",
+      "options": [
+        "Industrial",
+        "Residential",
+        "Agricultural",
+        "Timberland"
+      ],
+      "answer": "A",
+      "answerText": "Industrial"
+    },
+    {
+      "id": 26,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "What is the market value of 100 sqm residential land, 1st class (R-1), at ₱1,200 per sqm?",
+      "options": [
+        "₱12,000",
+        "₱120,000",
+        "₱1,200,000",
+        "₱24,000"
+      ],
+      "answer": "B",
+      "answerText": "₱120,000"
+    },
+    {
+      "id": 27,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "What is the assessed value of that ₱120,000 residential land?",
+      "options": [
+        "₱12,000",
+        "₱24,000",
+        "₱48,000",
+        "₱60,000"
+      ],
+      "answer": "B",
+      "answerText": "₱24,000"
+    },
+    {
+      "id": 28,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Basic tax (1%) on an assessed value of ₱24,000:",
+      "options": [
+        "₱24",
+        "₱120",
+        "₱240",
+        "₱2,400"
+      ],
+      "answer": "C",
+      "answerText": "₱240"
+    },
+    {
+      "id": 29,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Market value of 500 sqm agricultural land at ₱80 per sqm:",
+      "options": [
+        "₱4,000",
+        "₱40,000",
+        "₱400,000",
+        "₱16,000"
+      ],
+      "answer": "B",
+      "answerText": "₱40,000"
+    },
+    {
+      "id": 30,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Assessed value of that ₱40,000 agricultural land:",
+      "options": [
+        "₱8,000",
+        "₱16,000",
+        "₱20,000",
+        "₱32,000"
+      ],
+      "answer": "B",
+      "answerText": "₱16,000"
+    },
+    {
+      "id": 31,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Market value of 250 sqm commercial land at ₱3,000 per sqm:",
+      "options": [
+        "₱75,000",
+        "₱375,000",
+        "₱750,000",
+        "₱7,500,000"
+      ],
+      "answer": "C",
+      "answerText": "₱750,000"
+    },
+    {
+      "id": 32,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Assessed value of the ₱750,000 commercial land:",
+      "options": [
+        "₱150,000",
+        "₱300,000",
+        "₱375,000",
+        "₱600,000"
+      ],
+      "answer": "C",
+      "answerText": "₱375,000"
+    },
+    {
+      "id": 33,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Total basic tax plus SEF (1% + 1%) on an assessed value of ₱375,000:",
+      "options": [
+        "₱3,750",
+        "₱7,500",
+        "₱11,250",
+        "₱37,500"
+      ],
+      "answer": "B",
+      "answerText": "₱7,500"
+    },
+    {
+      "id": 34,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Market value of 1 hectare agricultural land at ₱50 per sqm:",
+      "options": [
+        "₱5,000",
+        "₱50,000",
+        "₱500,000",
+        "₱5,000,000"
+      ],
+      "answer": "C",
+      "answerText": "₱500,000"
+    },
+    {
+      "id": 35,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Assessed value of the ₱500,000 agricultural land:",
+      "options": [
+        "₱100,000",
+        "₱200,000",
+        "₱250,000",
+        "₱400,000"
+      ],
+      "answer": "B",
+      "answerText": "₱200,000"
+    },
+    {
+      "id": 36,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Basic tax plus SEF on an assessed value of ₱200,000:",
+      "options": [
+        "₱2,000",
+        "₱3,000",
+        "₱4,000",
+        "₱8,000"
+      ],
+      "answer": "C",
+      "answerText": "₱4,000"
+    },
+    {
+      "id": 37,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Assessed value of 2,500 sqm residential land at ₱600 per sqm:",
+      "options": [
+        "₱150,000",
+        "₱300,000",
+        "₱750,000",
+        "₱1,500,000"
+      ],
+      "answer": "B",
+      "answerText": "₱300,000"
+    },
+    {
+      "id": 38,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A 150 sqm residential lot has a market value of ₱300,000. What is the unit value per sqm?",
+      "options": [
+        "₱1,500",
+        "₱2,000",
+        "₱2,500",
+        "₱3,000"
+      ],
+      "answer": "B",
+      "answerText": "₱2,000"
+    },
+    {
+      "id": 39,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A residential land has an assessed value of ₱60,000. What is its market value?",
+      "options": [
+        "₱120,000",
+        "₱200,000",
+        "₱300,000",
+        "₱600,000"
+      ],
+      "answer": "C",
+      "answerText": "₱300,000"
+    },
+    {
+      "id": 40,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A commercial land has an assessed value of ₱100,000. What is its market value?",
+      "options": [
+        "₱50,000",
+        "₱200,000",
+        "₱250,000",
+        "₱500,000"
+      ],
+      "answer": "B",
+      "answerText": "₱200,000"
+    },
+    {
+      "id": 41,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Assessed value of 1,000 sqm industrial land at ₱1,000 per sqm:",
+      "options": [
+        "₱100,000",
+        "₱200,000",
+        "₱500,000",
+        "₱1,000,000"
+      ],
+      "answer": "C",
+      "answerText": "₱500,000"
+    },
+    {
+      "id": 42,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "If annual RPT is ₱2,400 and paid in four equal installments, each installment is:",
+      "options": [
+        "₱400",
+        "₱600",
+        "₱800",
+        "₱1,200"
+      ],
+      "answer": "B",
+      "answerText": "₱600"
+    },
+    {
+      "id": 43,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Delinquent tax of ₱1,000 for 12 months at 2% per month has a penalty of:",
+      "options": [
+        "₱120",
+        "₱200",
+        "₱240",
+        "₱720"
+      ],
+      "answer": "C",
+      "answerText": "₱240"
+    },
+    {
+      "id": 44,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Maximum accumulated penalty on delinquent RPT (36 months × 2%):",
+      "options": [
+        "36%",
+        "60%",
+        "72%",
+        "100%"
+      ],
+      "answer": "C",
+      "answerText": "72%"
+    },
+    {
+      "id": 45,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "Idle land tax is up to 5% of assessed value. At the maximum, what is the idle land tax on an assessed value of ₱100,000?",
+      "options": [
+        "₱500",
+        "₱1,000",
+        "₱5,000",
+        "₱50,000"
+      ],
+      "answer": "C",
+      "answerText": "₱5,000"
+    },
+    {
+      "id": 46,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "One hectare equals how many square meters?",
+      "options": [
+        "100",
+        "1,000",
+        "10,000",
+        "100,000"
+      ],
+      "answer": "C",
+      "answerText": "10,000"
+    },
+    {
+      "id": 47,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "2.5 hectares equals how many square meters?",
+      "options": [
+        "2,500",
+        "25,000",
+        "250,000",
+        "250"
+      ],
+      "answer": "B",
+      "answerText": "25,000"
+    },
+    {
+      "id": 48,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A rectangular lot measures 20 m × 25 m. Its area is:",
+      "options": [
+        "45 sqm",
+        "250 sqm",
+        "500 sqm",
+        "5,000 sqm"
+      ],
+      "answer": "C",
+      "answerText": "500 sqm"
+    },
+    {
+      "id": 49,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A lot measures 12 m × 30 m, with a unit value of ₱1,500 per sqm. Its market value is:",
+      "options": [
+        "₱54,000",
+        "₱360,000",
+        "₱540,000",
+        "₱630,000"
+      ],
+      "answer": "C",
+      "answerText": "₱540,000"
+    },
+    {
+      "id": 50,
+      "category": "Computations",
+      "type": "multiple_choice",
+      "question": "A building costs ₱1,000,000 to replace new. If depreciation is capped at 80% (20% residual value), its lowest depreciated value is:",
+      "options": [
+        "₱100,000",
+        "₱200,000",
+        "₱800,000",
+        "₱500,000"
+      ],
+      "answer": "B",
+      "answerText": "₱200,000"
+    },
+    {
+      "id": 51,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "A tax declaration (TD) number identifies:",
+      "options": [
+        "A registered title",
+        "The declared real property unit and its assessment record",
+        "The owner's TIN",
+        "A building permit"
+      ],
+      "answer": "B",
+      "answerText": "The declared real property unit and its assessment record"
+    },
+    {
+      "id": 52,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "Which is NOT normally found on a tax declaration?",
+      "options": [
+        "Owner's name and address",
+        "Assessed value",
+        "Owner's bank balance",
+        "Property location"
+      ],
+      "answer": "C",
+      "answerText": "Owner's bank balance"
+    },
+    {
+      "id": 53,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The kinds of property declared in tax declarations are:",
+      "options": [
+        "Land, building, machinery and other improvements",
+        "Cash and bonds",
+        "Stocks and shares",
+        "Vehicles only"
+      ],
+      "answer": "A",
+      "answerText": "Land, building, machinery and other improvements"
+    },
+    {
+      "id": 54,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The \"Boundaries\" entry (North, South, East, West) describes:",
+      "options": [
+        "Adjoining properties or landmarks in the four directions",
+        "The barangay boundary",
+        "The flood zone",
+        "The tax rate"
+      ],
+      "answer": "A",
+      "answerText": "Adjoining properties or landmarks in the four directions"
+    },
+    {
+      "id": 55,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The class code \"R-2\" usually refers to:",
+      "options": [
+        "Residential, 2nd class",
+        "Road, 2 lanes",
+        "Rice land, type 2",
+        "Registered, 2nd copy"
+      ],
+      "answer": "A",
+      "answerText": "Residential, 2nd class"
+    },
+    {
+      "id": 56,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The \"Actual Use\" entry tells:",
+      "options": [
+        "How the property is presently used",
+        "How it was used 10 years ago",
+        "What the owner plans to do with it",
+        "The zoning class only"
+      ],
+      "answer": "A",
+      "answerText": "How the property is presently used"
+    },
+    {
+      "id": 57,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The area of land on a tax declaration is normally stated in:",
+      "options": [
+        "Square meters",
+        "Cubic meters",
+        "Meters",
+        "Kilometers"
+      ],
+      "answer": "A",
+      "answerText": "Square meters"
+    },
+    {
+      "id": 58,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "Unit value on a tax declaration is the value per:",
+      "options": [
+        "Lot",
+        "Square meter",
+        "Hectare of the barangay",
+        "Title"
+      ],
+      "answer": "B",
+      "answerText": "Square meter"
+    },
+    {
+      "id": 59,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "Market value of land is basically computed as:",
+      "options": [
+        "Area × unit value (plus adjustments)",
+        "Area ÷ unit value",
+        "Assessed value × tax rate",
+        "Area × assessment level"
+      ],
+      "answer": "A",
+      "answerText": "Area × unit value (plus adjustments)"
+    },
+    {
+      "id": 60,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The \"Assessment Level\" entry is expressed as a:",
+      "options": [
+        "Percentage of market value",
+        "Fixed peso amount",
+        "Number of years",
+        "Area in sqm"
+      ],
+      "answer": "A",
+      "answerText": "Percentage of market value"
+    },
+    {
+      "id": 61,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "A new or revised assessment takes effect on:",
+      "options": [
+        "The date of the owner's declaration",
+        "January 1 of the year following issuance",
+        "July 1 of the same year",
+        "The date the title is registered"
+      ],
+      "answer": "B",
+      "answerText": "January 1 of the year following issuance"
+    },
+    {
+      "id": 62,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "\"Previous TD No.\" shows:",
+      "options": [
+        "The cancelled tax declaration the new one replaced",
+        "The next TD to be issued",
+        "The title number",
+        "The building permit number"
+      ],
+      "answer": "A",
+      "answerText": "The cancelled tax declaration the new one replaced"
+    },
+    {
+      "id": 63,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "The \"Memoranda\" section is used to record:",
+      "options": [
+        "Transfers, annotations and the basis for issuing or cancelling the declaration",
+        "Tax payment receipts only",
+        "The owner's personal notes",
+        "The weather during inspection"
+      ],
+      "answer": "A",
+      "answerText": "Transfers, annotations and the basis for issuing or cancelling the declaration"
+    },
+    {
+      "id": 64,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "For municipal properties, the tax declaration is approved by the:",
+      "options": [
+        "Municipal Treasurer",
+        "Provincial Assessor",
+        "Municipal Mayor",
+        "Barangay Captain"
+      ],
+      "answer": "B",
+      "answerText": "Provincial Assessor"
+    },
+    {
+      "id": 65,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "\"GR 2023\" on a tax declaration refers to:",
+      "options": [
+        "A General Revision of assessments in 2023",
+        "Government Registry 2023",
+        "Grant of Right 2023",
+        "Ground Rent 2023"
+      ],
+      "answer": "A",
+      "answerText": "A General Revision of assessments in 2023"
+    },
+    {
+      "id": 66,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "When one lot is subdivided into 3 lots, the assessor:",
+      "options": [
+        "Issues 1 new TD",
+        "Cancels the mother TD and issues 3 new TDs",
+        "Does nothing",
+        "Keeps the mother TD and adds 3 notes"
+      ],
+      "answer": "B",
+      "answerText": "Cancels the mother TD and issues 3 new TDs"
+    },
+    {
+      "id": 67,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "When two adjoining lots of the same owner are consolidated:",
+      "options": [
+        "Both TDs are cancelled and one new TD is issued",
+        "Two new TDs are issued",
+        "The tax rate doubles",
+        "The lots are exempt"
+      ],
+      "answer": "A",
+      "answerText": "Both TDs are cancelled and one new TD is issued"
+    },
+    {
+      "id": 68,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "After a sale of land, the assessor typically:",
+      "options": [
+        "Cancels the seller's TD and issues a new TD in the buyer's name",
+        "Keeps the seller's TD forever",
+        "Issues a TD in the name of the notary",
+        "Waives the assessment"
+      ],
+      "answer": "A",
+      "answerText": "Cancels the seller's TD and issues a new TD in the buyer's name"
+    },
+    {
+      "id": 69,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "A new building should be declared by the owner within how many days after completion?",
+      "options": [
+        "15",
+        "30",
+        "60",
+        "90"
+      ],
+      "answer": "C",
+      "answerText": "60"
+    },
+    {
+      "id": 70,
+      "category": "Tax Declaration",
+      "type": "multiple_choice",
+      "question": "Who is responsible for declaring real property for taxation?",
+      "options": [
+        "The owner or administrator",
+        "The Mayor",
+        "The barangay captain",
+        "The Registrar of Deeds"
+      ],
+      "answer": "A",
+      "answerText": "The owner or administrator"
+    },
+    {
+      "id": 71,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "OCT stands for:",
+      "options": [
+        "Original Certificate of Title",
+        "Official Certificate of Tax",
+        "Owner's Copy of Title",
+        "Original Cadastral Tax"
+      ],
+      "answer": "A",
+      "answerText": "Original Certificate of Title"
+    },
+    {
+      "id": 72,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "TCT stands for:",
+      "options": [
+        "Tax Clearance Transfer",
+        "Transfer Certificate of Title",
+        "Temporary Certificate of Tenure",
+        "Technical Cadastral Title"
+      ],
+      "answer": "B",
+      "answerText": "Transfer Certificate of Title"
+    },
+    {
+      "id": 73,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "CCT is the title issued for:",
+      "options": [
+        "A condominium unit",
+        "A commercial lot",
+        "A cadastral lot",
+        "A coconut land"
+      ],
+      "answer": "A",
+      "answerText": "A condominium unit"
+    },
+    {
+      "id": 74,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "Titles are registered with the:",
+      "options": [
+        "Registry of Deeds",
+        "Assessor's Office",
+        "Treasurer's Office",
+        "Barangay Hall"
+      ],
+      "answer": "A",
+      "answerText": "Registry of Deeds"
+    },
+    {
+      "id": 75,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "The Property Registration Decree is:",
+      "options": [
+        "PD 1529",
+        "PD 705",
+        "RA 7160",
+        "RA 9184"
+      ],
+      "answer": "A",
+      "answerText": "PD 1529"
+    },
+    {
+      "id": 76,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "The land registration system used in the Philippines is the:",
+      "options": [
+        "Torrens system",
+        "Cadastral lottery",
+        "Homestead system",
+        "Deed-only system"
+      ],
+      "answer": "A",
+      "answerText": "Torrens system"
+    },
+    {
+      "id": 77,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "The technical description of a lot usually states:",
+      "options": [
+        "Bearings and distances (metes and bounds)",
+        "The owner's income",
+        "The tax rate",
+        "The assessed value"
+      ],
+      "answer": "A",
+      "answerText": "Bearings and distances (metes and bounds)"
+    },
+    {
+      "id": 78,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "Lot No. on a title or tax declaration identifies:",
+      "options": [
+        "The surveyed parcel (e.g., a cadastral lot)",
+        "The owner's ID",
+        "The building",
+        "The tax payment"
+      ],
+      "answer": "A",
+      "answerText": "The surveyed parcel (e.g., a cadastral lot)"
+    },
+    {
+      "id": 79,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "A survey plan numbered \"Psd-...\" typically denotes a:",
+      "options": [
+        "Subdivision plan",
+        "Building plan",
+        "Road plan",
+        "Payment slip"
+      ],
+      "answer": "A",
+      "answerText": "Subdivision plan"
+    },
+    {
+      "id": 80,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "Survey plans are approved by which agency?",
+      "options": [
+        "DENR (Land Management)",
+        "DOF",
+        "DILG",
+        "DTI"
+      ],
+      "answer": "A",
+      "answerText": "DENR (Land Management)"
+    },
+    {
+      "id": 81,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "Free patents are granted over:",
+      "options": [
+        "Alienable and disposable public agricultural land",
+        "Forest land",
+        "Mineral reservations",
+        "National parks"
+      ],
+      "answer": "A",
+      "answerText": "Alienable and disposable public agricultural land"
+    },
+    {
+      "id": 82,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "\"A&D\" in land classification means:",
+      "options": [
+        "Alienable and Disposable",
+        "Assessed and Declared",
+        "Approved and Delivered",
+        "Agricultural and Dry"
+      ],
+      "answer": "A",
+      "answerText": "Alienable and Disposable"
+    },
+    {
+      "id": 83,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "The land area stated on a title is normally in:",
+      "options": [
+        "Square meters",
+        "Cubic meters",
+        "Linear meters",
+        "Ares only"
+      ],
+      "answer": "A",
+      "answerText": "Square meters"
+    },
+    {
+      "id": 84,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "An annotation of \"lis pendens\" on a title means:",
+      "options": [
+        "There is a pending court case involving the property",
+        "The tax is fully paid",
+        "The land is exempt",
+        "The owner has died"
+      ],
+      "answer": "A",
+      "answerText": "There is a pending court case involving the property"
+    },
+    {
+      "id": 85,
+      "category": "Land Titles and Surveys",
+      "type": "multiple_choice",
+      "question": "Under PD 1529, an adverse claim annotated on a title is effective for:",
+      "options": [
+        "7 days",
+        "30 days",
+        "6 months",
+        "1 year"
+      ],
+      "answer": "B",
+      "answerText": "30 days"
+    },
+    {
+      "id": 86,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "A tax declaration is:",
+      "options": [
+        "Conclusive proof of ownership",
+        "Not conclusive proof of ownership, but good evidence of a claim of ownership",
+        "A transfer certificate",
+        "A building permit"
+      ],
+      "answer": "B",
+      "answerText": "Not conclusive proof of ownership, but good evidence of a claim of ownership"
+    },
+    {
+      "id": 87,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "The Owner's Duplicate Certificate of Title is:",
+      "options": [
+        "The copy kept by the registered owner",
+        "The copy kept by the assessor",
+        "The copy kept by the treasurer",
+        "A tax receipt"
+      ],
+      "answer": "A",
+      "answerText": "The copy kept by the registered owner"
+    },
+    {
+      "id": 88,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "The assessor must notify the owner of a new or revised assessment in writing within:",
+      "options": [
+        "7 days",
+        "15 days",
+        "30 days",
+        "90 days"
+      ],
+      "answer": "C",
+      "answerText": "30 days"
+    },
+    {
+      "id": 89,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "An owner who disagrees with an assessment must appeal to the Local Board of Assessment Appeals within:",
+      "options": [
+        "15 days",
+        "30 days",
+        "60 days",
+        "120 days"
+      ],
+      "answer": "C",
+      "answerText": "60 days"
+    },
+    {
+      "id": 90,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "A decision of the LBAA may be appealed to the CBAA within:",
+      "options": [
+        "15 days",
+        "30 days",
+        "60 days",
+        "90 days"
+      ],
+      "answer": "B",
+      "answerText": "30 days"
+    },
+    {
+      "id": 91,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "LBAA stands for:",
+      "options": [
+        "Local Board of Assessment Appeals",
+        "Land Bureau of Assessment Affairs",
+        "Local Budget and Audit Authority",
+        "Land Board of Appraisal Agents"
+      ],
+      "answer": "A",
+      "answerText": "Local Board of Assessment Appeals"
+    },
+    {
+      "id": 92,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "Which real property is exempt from RPT?",
+      "options": [
+        "Property of a church actually, directly and exclusively used for religious purposes",
+        "A private commercial building",
+        "A residential house of a private person",
+        "An idle lot"
+      ],
+      "answer": "A",
+      "answerText": "Property of a church actually, directly and exclusively used for religious purposes"
+    },
+    {
+      "id": 93,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "Real property owned by the government is generally exempt, EXCEPT when:",
+      "options": [
+        "Its beneficial use is granted to a taxable person",
+        "It is a school",
+        "It is a municipal hall",
+        "It is a public road"
+      ],
+      "answer": "A",
+      "answerText": "Its beneficial use is granted to a taxable person"
+    },
+    {
+      "id": 94,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "RPT on a property constitutes:",
+      "options": [
+        "A superior lien on the property",
+        "A personal loan",
+        "A voluntary donation",
+        "No lien at all"
+      ],
+      "answer": "A",
+      "answerText": "A superior lien on the property"
+    },
+    {
+      "id": 95,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "Real property that escaped taxation and is declared for the first time may be assessed for back taxes up to a maximum of:",
+      "options": [
+        "3 years",
+        "5 years",
+        "10 years",
+        "20 years"
+      ],
+      "answer": "C",
+      "answerText": "10 years"
+    },
+    {
+      "id": 96,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "Transfer tax imposed by a province on sales of real property may not exceed:",
+      "options": [
+        "0.25%",
+        "0.5%",
+        "1%",
+        "6%"
+      ],
+      "answer": "B",
+      "answerText": "0.5%"
+    },
+    {
+      "id": 97,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "RA 12001 is known as the:",
+      "options": [
+        "Real Property Valuation and Assessment Reform Act",
+        "Land Titling Act",
+        "Agrarian Reform Act",
+        "Local Tax Code"
+      ],
+      "answer": "A",
+      "answerText": "Real Property Valuation and Assessment Reform Act"
+    },
+    {
+      "id": 98,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "A \"Certificate of No Improvement\" is issued by the:",
+      "options": [
+        "Assessor",
+        "Mayor's Office",
+        "Registry of Deeds",
+        "BIR"
+      ],
+      "answer": "A",
+      "answerText": "Assessor"
+    },
+    {
+      "id": 99,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "The right of the LGU to collect RPT through administrative or judicial action prescribes in:",
+      "options": [
+        "1 year",
+        "3 years",
+        "5 years",
+        "10 years"
+      ],
+      "answer": "C",
+      "answerText": "5 years"
+    },
+    {
+      "id": 100,
+      "category": "Procedures, Appeals and Exemptions",
+      "type": "multiple_choice",
+      "question": "RPT may be paid in four equal installments, due on:",
+      "options": [
+        "Mar 31, Jun 30, Sep 30, Dec 31",
+        "Jan 15, Apr 15, Jul 15, Oct 15",
+        "Jan 31, May 31, Aug 31, Nov 30",
+        "Quarterly on the 1st day"
+      ],
+      "answer": "A",
+      "answerText": "Mar 31, Jun 30, Sep 30, Dec 31"
+    }
+  ]
+}
