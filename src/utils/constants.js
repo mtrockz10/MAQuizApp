@@ -49,5 +49,5 @@ export const STORAGE_KEYS = {
   THEME: "iq_theme",
 }
 
-export const DEMO_ADMIN = { email: "admin@school.edu", password: "admin123" }
-export const DEMO_STUDENT = { email: "student@school.edu", password: "student123" }
+export const DEMO_ADMIN = { username: "admin", password: "admin123" }
+export const DEMO_STUDENT = { username: "student", password: "student123" }

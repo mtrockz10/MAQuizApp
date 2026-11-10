@@ -12,6 +12,7 @@ import {
   X,
   Sun,
   Moon,
+  Settings,
 } from "lucide-react"
 import { Logo } from "../ui/Logo"
 import { cn } from "../../utils/cn"
@@ -21,6 +22,7 @@ const navItems = [
   { path: "/admin/quizzes", label: "Quiz Management", icon: Mail },
   { path: "/admin/results", label: "Results", icon: Users },
   { path: "/admin/settings", label: "Points & Badges", icon: ShieldCheck },
+  { path: "/admin/account", label: "Account Settings", icon: Settings },
 ]
 
 export function Sidebar({ collapsed, setCollapsed }) {

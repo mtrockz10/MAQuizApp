@@ -284,7 +284,7 @@ export const BADGES = [
 export const INITIAL_USER = {
   id: "user-me",
   name: "Jordan Reyes",
-  email: "jordan@student.edu",
+  username: "jordan",
   role: "student",
   course: "BS Information Technology",
   avatar: "J",
@@ -310,5 +310,5 @@ export const STORAGE_KEYS = {
   THEME: "iq_theme",
 }
 
-export const DEMO_ADMIN = { email: "admin@school.edu", password: "admin123" }
-export const DEMO_STUDENT = { email: "student@school.edu", password: "student123" }
+export const DEMO_ADMIN = { username: "admin", password: "admin123" }
+export const DEMO_STUDENT = { username: "student", password: "student123" }

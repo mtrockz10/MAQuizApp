@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useAuth } from "../../context/AuthContext"
 import { useQuiz } from "../../context/QuizContext"
-import { Star, Flame, Trophy, User, Mail, Building2, Clock } from "lucide-react"
+import { Star, Flame, Trophy, User, Building2, Clock } from "lucide-react"
 import { cn } from "../../utils/cn"
 import { Card } from "../../components/ui/Card"
 import { Badge } from "../../components/ui/Badge"
@@ -124,8 +124,8 @@ export default function ProfilePage() {
 
       <div className="Card p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-4">
         <div className="flex items-center gap-3 p-2 rounded-card bg-gray-50 dark:bg-gray-800/50">
-          <Mail size={20} strokeWidth={2} className="text-gray-500" />
-          <span className="text-sm text-gray-700 dark:text-gray-300">{user?.email}</span>
+          <User size={20} strokeWidth={2} className="text-gray-500" />
+          <span className="text-sm text-gray-700 dark:text-gray-300">@{user?.username}</span>
         </div>
         <div className="flex items-center gap-3 p-2 rounded-card bg-gray-50 dark:bg-gray-800/50">
           <Building2 size={20} strokeWidth={2} className="text-gray-500" />

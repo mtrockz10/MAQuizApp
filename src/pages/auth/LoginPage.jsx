@@ -1,22 +1,16 @@
 import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useAuth } from "../../context/AuthContext"
 import { useToast } from "../../context/ToastContext"
 import { useTheme } from "../../context/ThemeContext"
-import { Mail, Lock, Sun, Moon, ArrowRight, Laptop, Handshake } from "lucide-react"
-import { cn } from "../../utils/cn"
+import { Sun, Moon, ArrowRight, Laptop } from "lucide-react"
 import { Button } from "../../components/ui/Button"
 import { Card } from "../../components/ui/Card"
 import { Input } from "../../components/ui/Input"
 import { Label } from "../../components/ui/Label"
 
-const DEMO_CREDS = [
-  { label: "Admin", email: "admin@school.edu", pass: "admin123", role: "Admin" },
-  { label: "Student", email: "student@school.edu", pass: "student123", role: "Student" },
-]
-
 export default function LoginPage() {
-  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [isRegister, setIsRegister] = useState(false)
   const [name, setName] = useState("")
@@ -33,11 +27,11 @@ export default function LoginPage() {
     setLoading(true)
     try {
       if (isRegister) {
-        await register({ name, email, password, course })
+        await register({ name, username, password, course })
         toast.success("Account created! Welcome to ImmersionQuest.")
         navigate("/student")
       } else {
-        const user = await login(email, password)
+        const user = await login(username, password)
         navigate(user.role === "admin" ? "/admin" : "/student", { replace: true })
       }
     } catch (err) {
@@ -100,14 +94,14 @@ export default function LoginPage() {
                 </>
               )}
               <div>
-                <Label>School ID or email</Label>
+                <Label>Username</Label>
                 <Input
-                  type="email"
-                  placeholder="you@school.edu"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  placeholder="Enter your username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   required
-                  autoComplete="email"
+                  autoComplete="username"
                 />
               </div>
               <div>
@@ -117,7 +111,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  autoComplete="password"
+                  autoComplete={isRegister ? "new-password" : "current-password"}
                 />
               </div>
               <Button
@@ -140,24 +134,6 @@ export default function LoginPage() {
               </button>
             </p>
 
-            <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6">
-              <p className="text-[11px] uppercase tracking-wider text-gray-400 mb-4">Try the demo:</p>
-              <div className="space-y-2">
-                {DEMO_CREDS.map((c) => (
-                  <button
-                    key={c.label}
-                    onClick={() => {
-                      setEmail(c.email)
-                      setPassword(c.pass)
-                    }}
-                    className="flex items-center justify-between px-3 py-2 rounded-button bg-gray-50 dark:bg-gray-800 text-xs text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    <span className="font-medium">{c.label} ({c.role})</span>
-                    <span className="text-[10px] text-gray-400">{c.email}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </Card>
       </main>

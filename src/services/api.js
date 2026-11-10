@@ -52,6 +52,11 @@ const DEFAULT_SETTINGS = {
   streakThreshold: 3,
   streakMultiplier: 2,
 }
+const usernameFromUser = (user) => {
+  const username = user.username?.trim() || user.email?.split("@")[0] ||
+    user.name?.trim().toLowerCase().replace(/[^a-z0-9._-]+/g, ".") || user.id
+  return username.toLowerCase()
+}
 
 // ---------------------------------------------------------------------------
 // Seed on first boot
@@ -97,7 +102,10 @@ function ensureSeeded() {
   // Keep demo accounts available even when this browser already has users
   // from an earlier run. Preserve registered accounts and their data.
   const storedUsers = getStore(STORAGE_KEYS.USERS, [])
-  const users = Array.isArray(storedUsers) ? storedUsers : []
+  const users = (Array.isArray(storedUsers) ? storedUsers : []).map((user) => {
+    const username = user.username || usernameFromUser(user)
+    return username === user.username ? user : { ...user, username }
+  })
   const demoUsers = [
     {
       ...DEMO_ADMIN,
@@ -122,6 +130,7 @@ function ensureSeeded() {
     ...STUDENTS.map((s) => ({
       id: s.id,
       email: s.email,
+      username: s.email.split("@")[0],
       password: "student123",
       role: "student",
       name: s.name,
@@ -136,14 +145,26 @@ function ensureSeeded() {
       joinedAt: nowISO(),
     })),
   ]
-  const existingEmails = new Set(users.map((user) => user.email?.toLowerCase()))
+  const existingUserIds = new Set(users.map((user) => user.id))
   const missingDemoUsers = demoUsers.filter(
-    (user) => !existingEmails.has(user.email.toLowerCase())
+    (user) => !existingUserIds.has(user.id)
   )
-  if (missingDemoUsers.length > 0) setStore(STORAGE_KEYS.USERS, [...users, ...missingDemoUsers])
+  if (missingDemoUsers.length > 0 || users.some((user, index) => user !== storedUsers[index])) {
+    setStore(STORAGE_KEYS.USERS, [...users, ...missingDemoUsers])
+  }
 
-  if (getStore(STORAGE_KEYS.USER, null) === null)
+  const currentUser = getStore(STORAGE_KEYS.USER, null)
+  if (currentUser === null) {
     setStore(STORAGE_KEYS.USER, null)
+  } else {
+    const migratedCurrentUser = {
+      ...currentUser,
+      username: currentUser.username || usernameFromUser(currentUser),
+    }
+    if (migratedCurrentUser.username !== currentUser.username) {
+      setStore(STORAGE_KEYS.USER, migratedCurrentUser)
+    }
+  }
   if (typeof window !== "undefined" && window.localStorage.getItem(STORAGE_KEYS.THEME) === null)
     window.localStorage.setItem(STORAGE_KEYS.THEME, "light")
 }
@@ -152,14 +173,14 @@ function ensureSeeded() {
 // Auth
 // ---------------------------------------------------------------------------
 export const authService = {
-  login: (email, password) => {
+  login: (username, password) => {
     ensureSeeded()
     const users = getStore(STORAGE_KEYS.USERS, [])
-    const normalizedEmail = email.trim().toLowerCase()
+    const normalizedUsername = username.trim().toLowerCase()
     const user = users.find(
-      (u) => u.email?.toLowerCase() === normalizedEmail && u.password === password
+      (u) => usernameFromUser(u) === normalizedUsername && u.password === password
     )
-    if (!user) throw new Error("Invalid email or password.")
+    if (!user) throw new Error("Invalid username or password.")
     const { password: _pw, ...safeUser } = user
     setStore(STORAGE_KEYS.USER, safeUser)
     return safeUser
@@ -168,12 +189,15 @@ export const authService = {
   register: (data) => {
     ensureSeeded()
     const users = getStore(STORAGE_KEYS.USERS, [])
-    if (users.some((u) => u.email.toLowerCase() === data.email.toLowerCase())) {
-      throw new Error("An account with this email already exists.")
+    const username = String(data.username || "").trim()
+    if (!username) throw new Error("Username is required.")
+    if (users.some((user) => usernameFromUser(user) === username.toLowerCase())) {
+      throw new Error("An account with this username already exists.")
     }
     const user = {
       id: uid(),
       ...data,
+      username,
       role: "student",
       avatar: data.name.trim().charAt(0).toUpperCase(),
       points: 0,
@@ -206,6 +230,45 @@ export const authService = {
       setStore(STORAGE_KEYS.USERS, users)
     }
 
+    if (typeof window !== "undefined") window.dispatchEvent(new Event("iq-user-updated"))
+    return updatedUser
+  },
+
+  updateCredentials: ({ username, currentPassword, newPassword }) => {
+    ensureSeeded()
+    const currentUser = getStore(STORAGE_KEYS.USER, null)
+    if (!currentUser || currentUser.role !== "admin") {
+      throw new Error("Only a signed-in admin can update admin credentials.")
+    }
+
+    const users = getStore(STORAGE_KEYS.USERS, [])
+    const userIndex = users.findIndex((user) => user.id === currentUser.id)
+    if (userIndex === -1) throw new Error("Admin account could not be found.")
+    if (users[userIndex].password !== currentPassword) {
+      throw new Error("Current password is incorrect.")
+    }
+
+    const normalizedUsername = String(username || "").trim()
+    if (!normalizedUsername) throw new Error("Username is required.")
+    if (users.some((user, index) =>
+      index !== userIndex && usernameFromUser(user) === normalizedUsername.toLowerCase()
+    )) {
+      throw new Error("That username is already in use.")
+    }
+
+    if (newPassword && newPassword.length < 8) {
+      throw new Error("New password must be at least 8 characters.")
+    }
+
+    users[userIndex] = {
+      ...users[userIndex],
+      username: normalizedUsername,
+      ...(newPassword ? { password: newPassword } : {}),
+    }
+    setStore(STORAGE_KEYS.USERS, users)
+
+    const updatedUser = { ...currentUser, username: normalizedUsername }
+    setStore(STORAGE_KEYS.USER, updatedUser)
     if (typeof window !== "undefined") window.dispatchEvent(new Event("iq-user-updated"))
     return updatedUser
   },

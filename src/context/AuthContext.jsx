@@ -18,8 +18,8 @@ export function AuthProvider({ children }) {
     return () => window.removeEventListener("iq-user-updated", syncUser)
   }, [])
 
-  const login = async (email, password) => {
-    const u = await authService.login(email, password)
+  const login = async (username, password) => {
+    const u = await authService.login(username, password)
     setUser(u)
     return u
   }
@@ -28,6 +28,12 @@ export function AuthProvider({ children }) {
     const u = await authService.register(data)
     setUser(u)
     return u
+  }
+
+  const updateCredentials = async (data) => {
+    const updatedUser = await authService.updateCredentials(data)
+    setUser(updatedUser)
+    return updatedUser
   }
 
   const logout = () => {
@@ -44,6 +50,7 @@ export function AuthProvider({ children }) {
     isStudent: user && user.role === "student",
     login,
     register,
+    updateCredentials,
     logout,
   }
 

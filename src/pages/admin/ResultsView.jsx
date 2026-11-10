@@ -25,7 +25,7 @@ export default function ResultsView() {
         const quiz = quizzes.find((item) => item.id === submission.quizId)
         const matchesSearch = [
           student?.name,
-          student?.email,
+          student?.username,
           submission.userId,
           quiz?.title || submission.quizTitle,
         ].some((value) => value?.toLowerCase().includes(query))
@@ -44,13 +44,13 @@ export default function ResultsView() {
       const safeText = /^[=+\-@]/.test(text) ? `'${text}` : text
       return `"${safeText}"`
     }
-    const header = ["Student", "Email", "User ID", "Quiz", "Score (%)", "Points", "Accuracy (%)", "Streak Bonus", "Completed At"]
+    const header = ["Student", "Username", "User ID", "Quiz", "Score (%)", "Points", "Accuracy (%)", "Streak Bonus", "Completed At"]
     const rows = filtered.map((submission) => {
       const student = students.find((item) => item.id === submission.userId)
       const quiz = quizzes.find((item) => item.id === submission.quizId)
       return [
         student?.name || submission.userId,
-        student?.email,
+        student?.username,
         submission.userId,
         quiz?.title || submission.quizTitle || "Archived quiz",
         submission.score,
@@ -144,7 +144,7 @@ export default function ResultsView() {
                     <tr key={s.id} className="border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800/50">
                       <td className="px-4 py-3">
                         <p className="text-sm text-gray-900 dark:text-gray-100">{student?.name || "Unknown student"}</p>
-                        <p className="text-xs text-gray-500 dark:text-gray-400">{student?.email || s.userId}</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400">@{student?.username || s.userId}</p>
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{quiz?.title || s.quizTitle || "Archived quiz"}</td>
                       <td className="px-4 py-3 text-sm text-center font-medium text-gray-900 dark:text-gray-100">{s.score}%</td>

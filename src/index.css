@@ -83,10 +83,6 @@
     @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-semibold;
   }
 
-  .toast {
-    @apply fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] max-w-md;
-  }
-
   .skeleton {
     @apply animate-pulse rounded-card bg-gray-200 dark:bg-gray-700;
   }

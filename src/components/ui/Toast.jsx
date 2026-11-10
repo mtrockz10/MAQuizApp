@@ -1,43 +1,52 @@
 import { motion } from "framer-motion"
-import { CheckCircle, AlertCircle, Info } from "lucide-react"
+import { AlertCircle, CheckCircle, Info, X } from "lucide-react"
 import { cn } from "../../utils/cn"
 
 const icons = { success: CheckCircle, error: AlertCircle, info: Info }
 const colors = {
-  success: "bg-mint/10 border-mint/20 text-emerald-800 dark:text-mint-300 dark:border-emerald-500/30",
-  error: "bg-red-50 border-red-100 text-red-800 dark:text-red-400 dark:border-red-900/30",
-  info: "bg-blue-50 border-blue-100 text-blue-800 dark:text-blue-400 dark:border-blue-900/30",
+  success: "border-emerald-200 bg-white text-emerald-950 dark:border-emerald-800 dark:bg-gray-800 dark:text-emerald-100",
+  error: "border-red-200 bg-white text-red-950 dark:border-red-800 dark:bg-gray-800 dark:text-red-100",
+  info: "border-blue-200 bg-white text-blue-950 dark:border-blue-800 dark:bg-gray-800 dark:text-blue-100",
+}
+const iconColors = {
+  success: "text-emerald-600 dark:text-emerald-400",
+  error: "text-red-600 dark:text-red-400",
+  info: "text-blue-600 dark:text-blue-400",
 }
 
 export function Toast({ toast, onRemove }) {
   const Icon = icons[toast.type] || Info
   return (
     <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 20, opacity: 0 }}
+      layout
+      initial={{ y: 16, opacity: 0, scale: 0.98 }}
+      animate={{ y: 0, opacity: 1, scale: 1 }}
+      exit={{ y: 8, opacity: 0, scale: 0.98 }}
+      role={toast.type === "error" ? "alert" : "status"}
+      aria-live={toast.type === "error" ? "assertive" : "polite"}
       className={cn(
-        "toast w-full flex items-start gap-3 px-4 py-3 rounded-card shadow-lg border",
+        "pointer-events-auto flex w-full items-start gap-3 rounded-xl border px-4 py-3.5 text-left shadow-xl ring-1 ring-black/5 backdrop-blur",
         colors[toast.type]
       )}
     >
-      <div className="mt-0.5 flex shrink-0">
-        <Icon size={18} strokeWidth={2.5} />
+      <div className={cn("mt-0.5 flex shrink-0", iconColors[toast.type])}>
+        <Icon size={20} strokeWidth={2.2} aria-hidden="true" />
       </div>
-      <div className="text-sm font-medium leading-none">{toast.message}</div>
+      <p className="min-w-0 flex-1 text-sm font-medium leading-5 break-words">
+        {toast.message}
+      </p>
       <button
+        type="button"
         onClick={onRemove}
-        className="ml-auto shrink-0 opacity-50 hover:opacity-100 transition-opacity p-1"
-        aria-label="Dismiss"
+        className="btn-icon -mr-1 -mt-1 shrink-0 p-1.5"
+        aria-label="Dismiss notification"
       >
-        <span className="sr-only">Dismiss</span>
-        <span className="w-0 h-0"></span>
+        <X size={16} aria-hidden="true" />
       </button>
     </motion.div>
   )
 }
 
 export function Toaster() {
-  // Toaster is rendered by app root; toasts managed via context
   return null
 }

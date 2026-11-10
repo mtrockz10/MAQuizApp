@@ -22,6 +22,7 @@ import QuizManagement from "./pages/admin/QuizManagement"
 import QuestionBuilder from "./pages/admin/QuestionBuilder"
 import ResultsView from "./pages/admin/ResultsView"
 import PointsBadgeSettings from "./pages/admin/PointsBadgeSettings"
+import AdminAccountSettings from "./pages/admin/AdminAccountSettings"
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
                   <Route path="builder/:quizId" element={<QuestionBuilder />} />
                   <Route path="results" element={<ResultsView />} />
                   <Route path="settings" element={<PointsBadgeSettings />} />
+                  <Route path="account" element={<AdminAccountSettings />} />
                 </Route>
 
                 {/* Fallback */}

@@ -83,7 +83,7 @@ export function BottomTabNav() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{user?.name}</p>
-              <p className="text-[11px] text-gray-500 dark:text-gray-400">{user?.email}</p>
+              <p className="text-[11px] text-gray-500 dark:text-gray-400">@{user?.username}</p>
             </div>
           </div>
           <div className="space-y-1">
