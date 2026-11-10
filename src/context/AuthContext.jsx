@@ -39,7 +39,6 @@ export function AuthProvider({ children }) {
   const logout = () => {
     authService.logout()
     setUser(null)
-    window.location.replace("/login")
   }
 
   const value = {
